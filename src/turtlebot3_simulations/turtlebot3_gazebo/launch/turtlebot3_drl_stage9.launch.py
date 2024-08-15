@@ -30,7 +30,8 @@ TURTLEBOT3_MODEL = os.environ['TURTLEBOT3_MODEL']
 def generate_launch_description():
     use_sim_time = LaunchConfiguration('use_sim_time', default='true')
     pause = LaunchConfiguration('pause', default='true')
-    world_file_name = 'turtlebot3_drl_stage9/' + TURTLEBOT3_MODEL + '.model'
+    # world_file_name = 'turtlebot3_drl_stage9/' + TURTLEBOT3_MODEL + '.model'
+    world_file_name = 'turtlebot3_drl_stage9/' + 'world_1.world'
     world = os.path.join(get_package_share_directory('turtlebot3_gazebo'),
                          'worlds', world_file_name)
     launch_file_dir = os.path.join(get_package_share_directory('turtlebot3_gazebo'), 'launch')
